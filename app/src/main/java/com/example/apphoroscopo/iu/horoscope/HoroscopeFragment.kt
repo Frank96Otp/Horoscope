@@ -13,6 +13,8 @@ import androidx.lifecycle.repeatOnLifecycle
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.apphoroscopo.databinding.FragmentHoroscopeBinding
+import com.example.apphoroscopo.domain.model.HoroscopeInfo
+import com.example.apphoroscopo.domain.model.HoroscopoModel
 import com.example.apphoroscopo.iu.horoscope.adapter.AdapterHoroscope
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
@@ -44,8 +46,26 @@ class HoroscopeFragment : Fragment() {
 
     private fun initList() {
         adapterHoroscope = AdapterHoroscope(onItemSelect = {
+
+
+            val type: HoroscopoModel =
+            when(it){
+                HoroscopeInfo.Acuario -> HoroscopoModel.Acuario
+                HoroscopeInfo.Aries -> HoroscopoModel.Aries
+                HoroscopeInfo.Cancer -> HoroscopoModel.Cancer
+                HoroscopeInfo.Capricornio -> HoroscopoModel.Capricornio
+                HoroscopeInfo.Escorpio -> HoroscopoModel.Escorpio
+                HoroscopeInfo.Geminis ->  HoroscopoModel.Geminis
+                HoroscopeInfo.Leo ->  HoroscopoModel.Leo
+                HoroscopeInfo.Libra ->  HoroscopoModel.Libra
+                HoroscopeInfo.Piscis ->  HoroscopoModel.Piscis
+                HoroscopeInfo.Sagitario ->  HoroscopoModel.Sagitario
+                HoroscopeInfo.Tauro ->  HoroscopoModel.Tauro
+                HoroscopeInfo.Virgo ->  HoroscopoModel.Virgo
+            }
+
            findNavController().navigate(
-               HoroscopeFragmentDirections.actionHoroscopeFragmentToHoroscopeDetailActivity()
+               HoroscopeFragmentDirections.actionHoroscopeFragmentToHoroscopeDetailActivity(type)
            )
         }
         )

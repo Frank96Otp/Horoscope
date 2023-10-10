@@ -28,5 +28,12 @@
         android:id="@+id/horoscopeDetailActivity"
         android:name="com.example.apphoroscopo.iu.detail.HoroscopeDetailActivity"
         android:label="activity_horoscope_detail"
-        tools:layout="@layout/activity_horoscope_detail" />
+        tools:layout="@layout/activity_horoscope_detail"
+
+        >
+
+        <argument
+            android:name="Type"
+            app:argType="com.example.apphoroscopo.domain.model.HoroscopoModel" />
+    </activity>
 </navigation>
