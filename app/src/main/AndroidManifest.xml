@@ -3,16 +3,19 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <application
+        android:name=".AppHoroscopo"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
-        android:name=".AppHoroscopo"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppHoroscopo"
         tools:targetApi="31">
+        <activity
+            android:name=".iu.detail.HoroscopeDetailActivity"
+            android:exported="false" />
         <activity
             android:name=".iu.home.MainActivity"
             android:exported="true">
