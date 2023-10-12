@@ -2,6 +2,7 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="gold">#FFC107</color>
     <color name="seed">#b77a00</color>
     <color name="md_theme_light_primary">#825500</color>
     <color name="md_theme_light_onPrimary">#FFFFFF</color>

@@ -32,4 +32,16 @@
     </style>
 
     <style name="Theme.AppHoroscopo" parent="Base.Theme.AppHoroscopo" />
+
+    <style name="Title">
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/josefinsans_bold</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">@color/material_dynamic_secondary10</item>
+    </style>
+
+    <style name="body" parent="Title">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">20sp</item>
+    </style>
 </resources>

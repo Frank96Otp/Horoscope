@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     tools:context=".iu.home.MainActivity">
 
     <FrameLayout
@@ -20,10 +21,7 @@
             android:layout_height="wrap_content"
             android:text="@string/tittle_app"
             android:layout_gravity="center"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            android:fontFamily="@font/josefinsans_bold"
-            android:textSize="30sp"
+            style="@style/Title"
             />
     </FrameLayout>
 
