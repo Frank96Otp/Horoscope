@@ -23,7 +23,7 @@ class HoroscopeDetailActivity : AppCompatActivity() {
     private val horoscopeDetailViewModel: HoroscopeDetailViewModel by viewModels()
 
     private val args:HoroscopeDetailActivityArgs by navArgs()
-    override fun onCreate(savedInstanceState: Bundle?) {
+    override fun onCreate(savedInstanceState: Bundle?) {        
         super.onCreate(savedInstanceState)
 
         binding = ActivityHoroscopeDetailBinding.inflate(layoutInflater)
